@@ -12,9 +12,9 @@ Console.Write("Введите второе число: ");
 double num2 = Convert.ToDouble(Console.ReadLine());
 Console.Write("Введите третье число: ");
 double num3 = Convert.ToDouble(Console.ReadLine());
-double[] array = {num1,num2,num3};
+double[] array = {num1,num2,num3};                  //добавил массив
 int i=0;
-double max = array[i];
+double max = array[i];                              //Принял первое число массива как самое большое
 while (i < array.Length)
 {
     if (array[i] > max)
