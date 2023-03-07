@@ -8,6 +8,10 @@ try
 Console.Write("Введите положительное целое число: ");
 int num = Convert.ToInt32(Console.ReadLine());
 int i=1;
+if (num == 0)
+{
+    Console.WriteLine("Введите число отличное от нуля");
+}
 if (num > 1)
 {
     while (i<=num)
@@ -22,10 +26,18 @@ if (num > 1)
 }
 else
 {
-    Console.WriteLine("Введите число больше 1");
+    while (num<1 && num != 0)
+    {
+        int even = num % 2;
+        if (even == 0)
+        {
+            Console.Write(num + " ");
+        }
+        num++;
+    }
 }
 }
 catch
 {
-    Console.WriteLine("Введено некорректное число");
+    Console.WriteLine("Введено некореектное число");
 }
