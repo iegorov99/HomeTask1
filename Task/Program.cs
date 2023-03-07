@@ -6,6 +6,8 @@
 9146548 -> 1
 3 -> нет
 */
+try
+{
 Console.Write("Введите целое число: ");
 int num = Convert.ToInt32(Console.ReadLine());
 int num2 = num;
@@ -39,4 +41,9 @@ else
             num2 = num2 / 10;
         }
     }
+}
+}
+catch
+{
+    Console.WriteLine("Некорректное число");
 }
